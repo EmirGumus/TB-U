@@ -1,4 +1,4 @@
 # TB-U
 Target-Based Utility
 
-from pygame import*
+with Pygame 
