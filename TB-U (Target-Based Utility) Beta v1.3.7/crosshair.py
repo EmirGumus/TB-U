@@ -17,7 +17,7 @@ class Crosshair(pygame.sprite.Sprite):
             tupleplus = [t.rect.centerx+30, t.rect.centery+30]
             result1 = all(x <= y for x, y in zip(tupleminus, pygame.mouse.get_pos()))
             result2 = all(x >= y for x, y in zip(tupleplus, pygame.mouse.get_pos()))  
-            if result1 or result2 or tuple == pygame.mouse.get_pos(): 
+            if (result1 and result2) or tuple == pygame.mouse.get_pos(): 
                 pygame.sprite.spritecollide(crosshair, target_group, True)
                 new_target = Target(random.randint(420,WIDTH-420), random.randint(155,HEIGTH-155))
                 target_group.add(new_target)
