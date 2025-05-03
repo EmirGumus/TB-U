@@ -1,4 +1,4 @@
-# TB-U
-Target-Based Utility
+# My first attemp to code a game
 
-Pygame 
+Python 
+Pygame Library
